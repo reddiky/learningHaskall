@@ -10,3 +10,12 @@ filterLowers st = [c | c <- st, c `elem`  ['A'..'Z']]
 sumLowers st = sum [1 | _ <- [c | c <- st, elem c ['a'..'z']]]
 
 rightTriangles = [(a,b,c) |  c <- [1..10], a <- [1..c], b <- [1..a], a ^2 + b ^ 2 == c^2, a+b+c==24]
+
+factorial :: Integer -> Integer
+factorial n = product [1..n]
+
+circumference :: Float -> Float
+circumference r = 2 * pi * r
+
+circumference' :: Double -> Double
+circumference'  r = 2 * pi * r
